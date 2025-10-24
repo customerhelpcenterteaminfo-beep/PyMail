@@ -78,7 +78,7 @@ def main():
     print("=== MailMan ===\n")
     
     emails = []
-    for i in range(1, 2):
+    for i in range(1, 11):
         email = input(f"Enter Client Email {i}: ")
         
         if '@' not in email:
@@ -119,3 +119,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
